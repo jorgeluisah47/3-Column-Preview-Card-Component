@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    /* Colors */
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+
+    /* Fonts */
+    --FF_lexend: 'Lexend Deca', sans-serif;
+    --FF_big: 'Big Shoulders Display', cursive;
+}
+
+html{
+    font-size: 62.5%;
+    display: flex;
+    justify-content: center;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+p{
+    line-height: 1.6;
+}
+
+section{
+    display: flex;
+    color: white;
+    font-family: var(--FF_lexend);
+    font-size: 15px;
+}
+
+@media all and (min-width: 320px){
+    section{ flex-direction: column; margin: 3rem auto; }
+    .card{
+        display: inline-block;
+        max-width: 32rem;
+        padding: 4.8rem;
+    }
+    .card.sedans{ 
+        border-radius: 1rem 1rem 0 0;
+        background-color: var(--Bright_orange);
+    }
+    .card.suvs{ 
+        background-color: var(--Dark_cyan); 
+    }
+    .card.luxury{ 
+        background-color: var(--Very_dark_cyan);
+        border-radius: 0 0 1rem 1rem;
+    }
+    .card h2{ 
+        font-family: var(--FF_big);
+        font-size: 3.8rem;
+        text-transform: uppercase;
+        margin: 3rem 0;
+    }
+    .card > p {
+        margin-bottom: 5rem;
+    }
+    .button {
+        padding: 1rem 2rem;
+        font-size: 15px;
+        border-width: 2px;
+        border-color: white;
+        border-style: solid;
+        border-radius: 3rem;
+        text-align: center;
+        max-width: 15rem;
+        background-color: white;
+    }
+    .button.sedans{ color: var(--Bright_orange); }
+    .button.sedans:hover{ 
+        
+        background-color: var(--Bright_orange); 
+        color: white; 
+    }
+    .button.suvs{ color: var(--Dark_cyan); }
+    .button.suvs:hover{ 
+        background-color: var(--Dark_cyan); 
+        color: white; 
+    }
+    .button.luxury{ color: var(--Very_dark_cyan); }
+    .button.luxury:hover{ 
+        background-color: var(--Very_dark_cyan); 
+        color: white;
+    }
+}
+
+@media all and (min-width: 1024px){
+    html{
+        min-width: 800px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    section{
+        flex-direction: row;
+    } 
+    .card{
+        width: 30.6rem;
+    }
+    .card.sedans{ 
+        border-radius: 1rem 0 0 1rem;
+    }
+    .card.luxury{ 
+        border-radius: 0 1rem 1rem 0;
+    }
+    .card > p{
+        margin-bottom: 8rem;
+    }
+}
