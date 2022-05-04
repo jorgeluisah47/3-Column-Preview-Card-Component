@@ -30,7 +30,7 @@ p{
     line-height: 1.6;
 }
 
-section{
+main{
     display: flex;
     color: white;
     font-family: var(--FF_lexend);
@@ -38,7 +38,7 @@ section{
 }
 
 @media all and (min-width: 320px){
-    section{ flex-direction: column; margin: 3rem auto; }
+    main{ flex-direction: column; margin: 3rem auto; }
     .card{
         display: inline-block;
         max-width: 32rem;
@@ -103,7 +103,7 @@ section{
         display: flex;
         align-items: center;
     }
-    section{
+    main{
         flex-direction: row;
     } 
     .card{
