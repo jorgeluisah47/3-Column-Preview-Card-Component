@@ -75,6 +75,9 @@ section{
         max-width: 15rem;
         background-color: white;
     }
+    .button:hover{
+        cursor: pointer;
+    }
     .button.sedans{ color: var(--Bright_orange); }
     .button.sedans:hover{ 
         
