@@ -20,7 +20,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Live Site URL: [Live Server]()
+- Live Site URL: [Live Server](https://3-column-preview-card-component-jlah47.netlify.app)
 
 ## My process
 
